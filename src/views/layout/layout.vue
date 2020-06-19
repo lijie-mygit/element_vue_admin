@@ -43,9 +43,9 @@
             <i class="el-icon-menu"></i>
             <span slot="title">关于我们</span>
           </el-menu-item>
-          <el-menu-item index="3" disabled>
+          <el-menu-item index="../tinymce">
             <i class="el-icon-document"></i>
-            <span slot="title">导航三</span>
+            <span slot="title">富文本编辑</span>
           </el-menu-item>
           <el-menu-item index="4">
             <i class="el-icon-setting"></i>
