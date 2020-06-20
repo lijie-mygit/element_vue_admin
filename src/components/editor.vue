@@ -44,6 +44,7 @@ export default {
         }
     },
     mounted(){
+        this.content = this.value;
         this.editorImgBtn();
         tinymce.init({
             ...this.DefaultInit,

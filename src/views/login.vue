@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import * as AuthAction from '../api/token.js'
 export default {
   data() {
     return {
@@ -42,7 +43,8 @@ export default {
       this.$refs.ruleForm.validate((valid) => {
         if (valid) {
           this.isSubmiting = true;
-           this.$router.push('/')
+          AuthAction.setToken('asdbsdbsdbsdbxahahahahahahahahahahck',2);
+          this.$router.push('/')
           /* this.axios.post(`admin/sign_in/`,{account:this.ruleForm.account,password:this.ruleForm.password}).then(res=>{
             console.log(res)
             this.isSubmiting = false

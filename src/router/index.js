@@ -44,6 +44,19 @@ const routes = [
             name: "富文本"
         }]
     },
+    /* 表格 */
+    {
+        path: '/table',
+        name: '表格',
+        component: Layout,
+        redirect: '/table',
+        children: [{
+            path: '/table',
+            component: () =>
+                import ('../views/table.vue'),
+            name: "表格"
+        }]
+    },
     /* 登录页面 */
     {
         path: '/login',
@@ -60,27 +73,27 @@ const router = new VueRouter({
 })
 
 /* 全局路由守卫 */
-// router.beforeEach((to, from, next) => {
-//     console.log(to)
-//     if (to.fullPath == "/login") {
-//         if (AuthAction.getToken()) {
-//             next({
-//                 path: '/Home'
-//             })
-//         } else {
-//             next();
-//         }
-//     } else {
-//         if (AuthAction.getToken()) { //判断本地是否存在access_token
-//             next()
-//         } else {
-//             next({
-//                 path: '/login'
-//             })
-//         }
-//     }
-//     // return next()
-// })
+router.beforeEach((to, from, next) => {
+    console.log(to)
+    if (to.fullPath == "/login") {
+        if (AuthAction.getToken()) {
+            next({
+                path: '/Home'
+            })
+        } else {
+            next();
+        }
+    } else {
+        if (AuthAction.getToken()) { //判断本地是否存在access_token
+            next()
+        } else {
+            next({
+                path: '/login'
+            })
+        }
+    }
+    // return next()
+})
 
 /* 解决侧边栏路由重复点击报错 */
 const originalPush = VueRouter.prototype.push

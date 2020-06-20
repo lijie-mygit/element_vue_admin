@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Message, MessageBox, Notification } from 'element-ui'
-import AuthAction from './token'
+import * as AuthAction from './token'
 // axios.defaults.baseURL = 'http://zswenlv.mini.backstage.xunbaowang.net/interface/v1/';  //线上
 axios.defaults.baseURL = '/interface/v1/'; //开发
 

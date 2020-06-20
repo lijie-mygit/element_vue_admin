@@ -47,9 +47,13 @@
             <i class="el-icon-document"></i>
             <span slot="title">富文本编辑</span>
           </el-menu-item>
+          <el-menu-item index="../table">
+            <i class="el-icon-s-order"></i>
+            <span slot="title">表格</span>
+          </el-menu-item>
           <el-menu-item index="4">
             <i class="el-icon-setting"></i>
-            <span slot="title">导航四</span>
+            <span slot="title">设置</span>
           </el-menu-item>
         </el-menu>
       </div>
@@ -89,6 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
+  width: 100%;
   .layout_header {
     width: 100%;
     height: 70px;
@@ -141,6 +146,9 @@ export default {
         // min-height: calc(100vh - 70px);
         height: 100%;
       }
+    }
+    .layout_content{
+      width: calc(100vw - 165px);
     }
   }
   .el-breadcrumb {

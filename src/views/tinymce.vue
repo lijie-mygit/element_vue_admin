@@ -15,7 +15,7 @@
 export default {
   data() {
     return {
-          content:'',
+          content:'考虑到那是开了电脑',
     };
   },
   methods:{

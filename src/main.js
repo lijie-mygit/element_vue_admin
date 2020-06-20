@@ -11,7 +11,10 @@ import Editor from '@/components/editor.vue'
 Vue.component('Editor', Editor)
 
 import echarts from 'echarts'
+import axios from './api/axios'
+
 Vue.prototype.$echarts = echarts
+Vue.prototype.axios = axios
 
 
 Vue.config.productionTip = false
