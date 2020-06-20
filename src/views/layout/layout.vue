@@ -128,15 +128,18 @@ export default {
   .layout_conten {
     display: flex;
     justify-content: flex-start;
+    min-height:calc(100vh - 70px);
     .layout_aside {
       .el-menu-vertical-demo:not(.el-menu--collapse) {
         width: 160px;
-        min-height: calc(100vh - 70px);
+        // min-height: calc(100vh - 70px);
+        height: 100%;
         text-align: left;
         overflow: hidden;
       }
       .el-menu--collapse {
-        min-height: calc(100vh - 70px);
+        // min-height: calc(100vh - 70px);
+        height: 100%;
       }
     }
   }

@@ -1,7 +1,13 @@
 <template>
   <div class="tiny">
-    <editor  :value="content" @input="editorInp"></editor>
-    <div class="editor-content" v-html="content" />
+    <div>
+      <h2>富文本编辑器</h2>
+      <editor  :value="content" @input="editorInp"></editor>
+    </div>
+    <div>
+      <h2>富文本渲染</h2>
+      <div v-html="content"></div>
+    </div>
   </div>
 </template>
 
