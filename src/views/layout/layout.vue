@@ -3,9 +3,10 @@
     <div class="layout_header">
       <span :style="isCollapse?'width:64px':''">
         后台管理系统
+        <!-- <img src="../../assets/image/bg3.jpg" alt="logo" width="100%" height="100%"> -->
         <i @click="Collapse" class="el-icon-s-operation"></i>
       </span>
-
+      <!-- <b>后台管理系统</b> -->
       <el-dropdown>
         <span class="el-dropdown-link">
           <i class="el-icon-setting"></i>
@@ -104,6 +105,9 @@ export default {
     color: #fff;
     font-size: 22px;
     padding-right: 50px;
+    b{
+      color: #333;
+    }
     > span {
       display: inline-block;
       width: 160px;
@@ -114,12 +118,20 @@ export default {
       background: #324157;
       position: relative;
       transition: all 0.3s ease-in-out;
+      position: relative;
       i {
         color: #324157;
         position: absolute;
         top: 50%;
         right: -40px;
         transform: translateY(-50%);
+      }
+      img{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
       }
     }
     .el-dropdown-link {
