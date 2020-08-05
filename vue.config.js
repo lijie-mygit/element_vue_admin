@@ -4,7 +4,7 @@ const webpack = require('webpack')
 module.exports = {
     lintOnSave: true,
     assetsDir: './',
-    publicPath: './',
+    publicPath: '/',
     devServer: {
         proxy: {
             '/interface/v1/': {
