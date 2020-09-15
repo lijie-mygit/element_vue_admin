@@ -3,6 +3,7 @@ import { Message, MessageBox, Notification } from 'element-ui'
 import * as AuthAction from './token'
 // axios.defaults.baseURL = 'http://zswenlv.mini.backstage.xunbaowang.net/interface/v1/';  //线上
 axios.defaults.baseURL = '/interface/v1/'; //开发
+// axios.defaults.baseURL = 'http://localhost:8080/'; //开发
 
 const http = axios.create({
     timeout: 10000, // 请求超时时间

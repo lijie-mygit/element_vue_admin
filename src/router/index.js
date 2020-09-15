@@ -57,6 +57,25 @@ const routes = [
             name: "表格"
         }]
     },
+    /* 多级页面2 */
+    {
+        path: '/website',
+        name: '多级页面',
+        component: Layout,
+        redirect: '/website/website1',
+        children: [{
+            path: '/website/website1',
+            component: () =>
+                import ('../views/webTest/webTest1.vue'),
+            name: "第一页面"
+        },
+        {
+            path: '/website/website2',
+            component: () =>
+                import ('../views/webTest/webTest2.vue'),
+            name: "第二页面"
+        }]
+    },
     /* 登录页面 */
     {
         path: '/login',

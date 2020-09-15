@@ -7,6 +7,11 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
+import htmlToPdf from '@/until/htmlToPdf'
+// 注册-页面转PDF组件
+Vue.use(htmlToPdf)
+
+
 import Editor from '@/components/editor.vue'
 Vue.component('Editor', Editor)
 

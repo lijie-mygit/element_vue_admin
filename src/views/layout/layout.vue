@@ -52,6 +52,18 @@
             <i class="el-icon-s-order"></i>
             <span slot="title">表格</span>
           </el-menu-item>
+          <el-submenu index="/website">
+            <template slot="title">
+              <i class="el-icon-picture-outline"></i>
+              <span>多级页面</span>
+            </template>
+            <el-menu-item-group>
+              <el-menu-item index="/website/website1">页面1</el-menu-item>
+            </el-menu-item-group>
+            <el-menu-item-group>
+              <el-menu-item index="/website/website2">页面2</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
           <el-menu-item index="4">
             <i class="el-icon-setting"></i>
             <span slot="title">设置</span>
