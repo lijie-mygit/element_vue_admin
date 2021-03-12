@@ -14,7 +14,7 @@
     "element-ui": "^2.13.2",
     "html2canvas": "^1.0.0-rc.7",
     "js-cookie": "^2.2.1",
-    "jspdf": "^2.1.1",
+    "jspdf": "^2.3.1",
     "tinymce": "^5.3.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
